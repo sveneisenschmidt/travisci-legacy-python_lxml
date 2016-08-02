@@ -23,8 +23,8 @@ before_install:
 
 # Install dependencies
 install:
-    - sudo apt-get install -y python-dev libxml2 libxml2-dev libxslt-dev python-lxml
-
+#    - sudo apt-get install -y python-dev libxml2 libxml2-dev libxslt-dev python-lxml
+    - sudo pip install lxml
 # Test
 script:
     - python -c "import lxml"
