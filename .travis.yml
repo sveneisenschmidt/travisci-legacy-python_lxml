@@ -20,8 +20,6 @@ php:
 # Show python version
 before_install:
     - python --version
-    - sudo apt-get install -f --reinstall python2.7
-    - sudo pip install --upgrade pip
 
 # Install dependencies
 install:
@@ -30,4 +28,3 @@ install:
 # Test
 script:
     - python -c "import lxml"
-    - python -c "import lxml.html"
