@@ -27,4 +27,4 @@ install:
     - sudo pip install lxml
 # Test
 script:
-    - python -c "import lxml"
+    - python ./test.py
