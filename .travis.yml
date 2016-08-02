@@ -17,11 +17,13 @@ language: php
 php:
     - 5.4
 
+before_install:
+    - python --version
+
 install:
     - sudo pip install lxml
 
 # Test
 script:
-    - python --version
     - python -c "import lxml"
     - python -c "import lxml.html"
