@@ -17,9 +17,11 @@ language: php
 php:
     - 5.4
 
+# Show python version
 before_install:
     - python --version
 
+# Install dependencies 
 install:
     - sudo pip install lxml
 
