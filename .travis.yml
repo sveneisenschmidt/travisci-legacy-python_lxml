@@ -20,11 +20,12 @@ php:
 # Show python version
 before_install:
     - python --version
-    - pip install --upgrade pip
+    - sudo apt-get install python
+    - sudo pip install --upgrade pip
 
 # Install dependencies
 install:
-    - pip install lxml
+    - sudo pip install lxml
 
 # Test
 script:
